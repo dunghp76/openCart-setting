@@ -1,6 +1,8 @@
 @@ setting SSL (HTTPS)
 before check
 check AWS open port 443 
+open cmd 
+Telnet domain 443
 ======================================
 $sudo a2enmod ssl rewrite
 $sudo apt update
