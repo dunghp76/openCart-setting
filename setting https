@@ -1,0 +1,17 @@
+@@ setting SSL (HTTPS)
+before check
+check AWS open port 443 
+======================================
+$sudo a2enmod ssl rewrite
+$sudo apt update
+$sudo apt install -y snapd
+$sudo snap install core; sudo snap refresh core
+$sudo snap install --classic certbot
+$sudo ln -s /snap/bin/certbot /usr/bin/certbot
+$sudo certbot --apache (input domain name not http input)
+
+$sudo certbot
+-> choice ssl file name 
+-> check file on folder /etc/apache2/sites-available 
+@@ End - Setting SSL (HTTPS)
+=========================================
